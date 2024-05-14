@@ -1,0 +1,26 @@
+1. media query needs a context so made a builder that gives the context to function first to attain height and width
+2. make media query function static to work
+3. system chrome for device orientation in widget build
+4. dont use safe area on scaffolds
+5. appwrite version 11.0.1 dont give null as a bool error
+6. is equal to and order by in firebase requires multiple indexes so make one in firestore dtabase like when using time
+    as sorting method
+7. when writing to set twice, second time use addAll otherwise it will overwrite the existing data in set
+8. in dart with enum values, switch statement should cover all of them
+9. Alternative solution to stream builder => stream: FirebaseFirestore.instance
+    .collection('messages')
+    .where('senderId', isEqualTo: 'YnNX9bQUe1T03PHpuDSS7vhdYCC2')
+    .where('recieverId', isEqualTo: 'RggyEAK1eTT8tkM9Y0rj8Z5YQbo1')
+    .orderBy('time', descending: true)
+    .snapshots(),
+10. Model bottom sheet has its own context so give its child a stateful widget to reflect changed values of it. 
+11. Maps conditions should always be checked with .isEmpty or .isNotEmpty not with {}
+12. add android default splash screen images in all drawable and mipmap folders and then use in both drawable folders 
+    launch background xml using syntax @mipmap/image without .png or .jpg
+13. Gesture detector should be wrapped in a container of fixed height when using above stream or future builder
+14. Use stack fit property if image in stack or any container not maintaining its given dimensions
+15. @pragma('vm:entry-point') this syntax above a function is used to tell compiler his is entry point and also dont remove it from memory even if it seems unused
+16. Notifications Steps
+    Add meta data tag in Android Manifest file
+    make local notifications instance and then initialize with android settings
+    
