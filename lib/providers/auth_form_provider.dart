@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
@@ -6,6 +7,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 // import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class AuthFormProv with ChangeNotifier {
   Map<String, String> myData = {
@@ -51,7 +53,7 @@ class AuthFormProv with ChangeNotifier {
   Future<String> updateProfileImage(String userId, File image) async {
     try {
       String imageUrl = '';
-
+      FirebaseAuth _auth = await FirebaseAuth.instance;
       db = await FirebaseFirestore.instance;
       FirebaseStorage storage = await FirebaseStorage.instance;
       final ref = await storage.ref().child('images').child(userId + '.jpg');

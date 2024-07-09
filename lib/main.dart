@@ -1,12 +1,15 @@
+import 'dart:async';
 import 'dart:developer';
 
+import 'package:convo_connect_chat_app/data/testing_api.dart';
+
 import 'package:convo_connect_chat_app/providers/auth_form_provider.dart';
-import 'package:convo_connect_chat_app/providers/auth_provider_logic.dart';
-import 'package:convo_connect_chat_app/providers/chat_provider_logic.dart';
+import 'package:convo_connect_chat_app/providers/auth_provider.dart';
+import 'package:convo_connect_chat_app/providers/chat_provider.dart';
 import 'package:convo_connect_chat_app/screens/authentication_screen.dart';
 import 'package:convo_connect_chat_app/screens/chats_screen.dart';
 import 'package:convo_connect_chat_app/screens/developer_info.dart';
-
+import 'package:convo_connect_chat_app/screens/otp_verification_screen.dart';
 import 'package:convo_connect_chat_app/screens/profile_page.dart';
 import 'package:convo_connect_chat_app/screens/report_page.dart';
 import 'package:convo_connect_chat_app/screens/settings_page.dart';
@@ -17,7 +20,8 @@ import 'package:convo_connect_chat_app/screens/user_chat_screen.dart';
 import 'package:convo_connect_chat_app/screens/whatsnew_screen.dart';
 
 import 'package:convo_connect_chat_app/widgets/select_theme.dart';
-
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 // import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

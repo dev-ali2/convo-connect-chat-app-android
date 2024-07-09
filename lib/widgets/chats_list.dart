@@ -3,10 +3,10 @@ import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:convo_connect_chat_app/animations/splash_screen_anim.dart';
-
+import 'package:convo_connect_chat_app/data/temp_chats.dart';
 import 'package:convo_connect_chat_app/helpers/screen_size.dart';
 import 'package:convo_connect_chat_app/models/chat.dart';
-import 'package:convo_connect_chat_app/providers/chat_provider_logic.dart';
+import 'package:convo_connect_chat_app/providers/chat_provider.dart';
 import 'package:convo_connect_chat_app/screens/chats_screen.dart';
 import 'package:convo_connect_chat_app/screens/profile_page.dart';
 import 'package:convo_connect_chat_app/screens/user_chat_screen.dart';

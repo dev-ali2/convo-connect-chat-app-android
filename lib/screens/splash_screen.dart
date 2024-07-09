@@ -1,10 +1,11 @@
 import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-
-import 'package:convo_connect_chat_app/providers/chat_provider_logic.dart';
-
-import 'package:convo_connect_chat_app/providers/auth_provider_logic.dart';
+import 'package:convo_connect_chat_app/animations/splash_screen_anim.dart';
+import 'package:convo_connect_chat_app/providers/chat_provider.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:onesignal_flutter/onesignal_flutter.dart';
+import 'package:convo_connect_chat_app/providers/auth_provider.dart';
 import 'package:convo_connect_chat_app/screens/chats_screen.dart';
 import 'package:convo_connect_chat_app/screens/otp_verification_screen.dart';
 import 'package:convo_connect_chat_app/screens/starter_screen.dart';
@@ -13,6 +14,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:internet_connectivity_checker/internet_connectivity_checker.dart';
+import 'package:lucide_icons/lucide_icons.dart';
 
 class SplashScreen extends StatefulWidget {
   static const routeName = '/splashScreen';
