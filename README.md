@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+# Note
+
+This project do not include any of my personal keys or private data so when forking or running, use your own keys for Firebase and One signal
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
