@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:convo_connect_chat_app/helpers/screen_size.dart';
-import 'package:convo_connect_chat_app/providers/chat_provider.dart';
+import 'package:convo_connect_chat_app/providers/chat_provider_logic.dart';
 import 'package:flutter/material.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
 import 'package:top_snackbar_flutter/top_snack_bar.dart';

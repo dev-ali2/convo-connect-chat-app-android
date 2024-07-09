@@ -1,17 +1,17 @@
 import 'dart:async';
-import 'dart:convert';
+
 import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:convo_connect_chat_app/animations/splash_screen_anim.dart';
 import 'package:convo_connect_chat_app/helpers/screen_size.dart';
-import 'package:convo_connect_chat_app/providers/chat_provider.dart';
+import 'package:convo_connect_chat_app/providers/chat_provider_logic.dart';
 import 'package:convo_connect_chat_app/screens/chat_user_details_screen.dart';
 import 'package:convo_connect_chat_app/widgets/chat_bubble.dart';
-import 'package:convo_connect_chat_app/widgets/chats_list.dart';
+
 import 'package:convo_connect_chat_app/widgets/custom_sized_box.dart';
 import 'package:convo_connect_chat_app/widgets/send_image_dialog.dart';
-import 'package:convo_connect_chat_app/widgets/user_chat_window.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -23,8 +23,7 @@ import 'package:lucide_icons/lucide_icons.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
-import 'package:top_snackbar_flutter/custom_snack_bar.dart';
-import 'package:top_snackbar_flutter/custom_snack_bar.dart';
+
 import 'package:top_snackbar_flutter/top_snack_bar.dart';
 
 class UserChatScreen extends StatefulWidget {
@@ -54,33 +53,6 @@ class _UserChatScreenState extends State<UserChatScreen> {
     super.initState();
     OneSignal.Notifications.addForegroundWillDisplayListener((event) {
       event.preventDefault();
-
-      // try {
-      //   log('wwww ${event.notification.rawPayload.runtimeType}');
-      //   log('wwww ${event.notification.rawPayload}');
-      //   Map<String, dynamic> data1 = event.notification.rawPayload!["custom"];
-      //   log('wwww ${data1}');
-      //   Map<String, dynamic> data2 = data1["a"];
-      //   log('wwww ${data2}');
-
-      //   log('wwww ${event.notification.rawPayload!["custom"]["a"]}');
-      // } catch (e) {
-      //   log('wwww error payload : $e');
-      // }
-
-      // log('neww data ${event.notification.rawPayload!['custom']['a'].toString()}');
-      // log('new feature trigger notification ${event.notification.rawPayload.toString()} ');
-
-      // if (event.notification.rawPayload != null &&
-      //     event.notification.rawPayload!.isNotEmpty &&
-      //     event.notification.rawPayload != {}) {
-      //   log('new feature in function 1');
-      //   log('new data printing got id ${event.notification.rawPayload.toString()}');
-      //   log('new data printing saved data ${userDetails['userId']}');
-      //   if (event.notification.rawPayload!['myId'] == userDetails['userId']) {
-      //     log('new feature notification id ${event.notification.androidNotificationId}');
-      //   }
-      // }
     });
   }
 

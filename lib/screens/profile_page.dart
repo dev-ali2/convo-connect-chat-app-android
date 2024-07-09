@@ -3,17 +3,17 @@ import 'dart:developer';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:convo_connect_chat_app/animations/splash_screen_anim.dart';
+
 import 'package:convo_connect_chat_app/helpers/screen_size.dart';
-import 'package:convo_connect_chat_app/main.dart';
+
 import 'package:convo_connect_chat_app/providers/auth_form_provider.dart';
-import 'package:convo_connect_chat_app/providers/chat_provider.dart';
+import 'package:convo_connect_chat_app/providers/chat_provider_logic.dart';
 import 'package:convo_connect_chat_app/widgets/change_name_dialog.dart';
 import 'package:convo_connect_chat_app/widgets/upload_photo.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
@@ -383,15 +383,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               )
             : Center(
-                // child: SplashScreenAnimation(
-                //   splashScreen: Text(
-                //     'Loading Profile 🧐',
-                //     style: TextStyle(
-                //         fontWeight: FontWeight.bold,
-                //         fontSize: 25,
-                //         color: Theme.of(context).colorScheme.primary),
-                //   ),
-                // ),
                 child: LoadingAnimationWidget.threeRotatingDots(
                   color: Theme.of(context).colorScheme.primary,
                   size: height * 0.06,

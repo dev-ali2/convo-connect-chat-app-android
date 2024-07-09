@@ -2,7 +2,7 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:convo_connect_chat_app/helpers/screen_size.dart';
-import 'package:convo_connect_chat_app/providers/chat_provider.dart';
+import 'package:convo_connect_chat_app/providers/chat_provider_logic.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';

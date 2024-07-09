@@ -1,8 +1,7 @@
 import 'dart:async';
-import 'dart:developer';
 
 import 'package:convo_connect_chat_app/helpers/screen_size.dart';
-import 'package:convo_connect_chat_app/screens/authentication_screen.dart';
+
 import 'package:convo_connect_chat_app/screens/chats_screen.dart';
 import 'package:convo_connect_chat_app/screens/splash_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';

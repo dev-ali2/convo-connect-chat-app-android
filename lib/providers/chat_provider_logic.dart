@@ -5,19 +5,14 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:app_settings/app_settings.dart';
-import 'package:convo_connect_chat_app/main.dart';
-import 'package:convo_connect_chat_app/providers/auth_form_provider.dart';
-import 'package:convo_connect_chat_app/providers/auth_provider.dart';
+
 import 'package:convo_connect_chat_app/screens/account_blocked.dart';
 import 'package:convo_connect_chat_app/screens/firebase_disabled.dart';
-import 'package:convo_connect_chat_app/screens/settings_page.dart';
-import 'package:convo_connect_chat_app/screens/splash_screen.dart';
-import 'package:convo_connect_chat_app/screens/starter_screen.dart';
-import 'package:convo_connect_chat_app/screens/user_chat_screen.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter/services.dart';
+
 // import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 // import 'package:googleapis_auth/auth_io.dart';
 import 'package:intl/intl.dart';
@@ -29,7 +24,6 @@ import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:top_snackbar_flutter/top_snack_bar.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 

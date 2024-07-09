@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:convo_connect_chat_app/helpers/screen_size.dart';
 import 'package:flutter/material.dart';
 

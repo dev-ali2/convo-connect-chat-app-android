@@ -3,7 +3,7 @@ import 'dart:developer';
 
 import 'package:convo_connect_chat_app/helpers/screen_size.dart';
 import 'package:convo_connect_chat_app/main.dart';
-import 'package:convo_connect_chat_app/providers/auth_provider.dart';
+import 'package:convo_connect_chat_app/providers/auth_provider_logic.dart';
 import 'package:convo_connect_chat_app/screens/chats_screen.dart';
 import 'package:convo_connect_chat_app/widgets/theme_container.dart';
 import 'package:flutter/material.dart';

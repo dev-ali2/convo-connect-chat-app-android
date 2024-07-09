@@ -1,6 +1,11 @@
 # convo_connect_chat_app
 
-A new Flutter project.
+Chat in Other person's native language in realtime
+
+# Note
+
+This code do not include any api and database links so use your own links when using this code...
+Thanks for understanding...:)
 
 ## Getting Started
 

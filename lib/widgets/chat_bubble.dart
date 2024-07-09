@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:convo_connect_chat_app/helpers/screen_size.dart';
-import 'package:convo_connect_chat_app/providers/chat_provider.dart';
+import 'package:convo_connect_chat_app/providers/chat_provider_logic.dart';
 import 'package:convo_connect_chat_app/widgets/delete_message_dialog.dart';
 import 'package:convo_connect_chat_app/widgets/image_viewer.dart';
 import 'package:firebase_auth/firebase_auth.dart';

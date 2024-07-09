@@ -1,27 +1,22 @@
 import 'dart:async';
-import 'dart:developer';
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+
 import 'package:convo_connect_chat_app/animations/splash_screen_anim.dart';
-import 'package:convo_connect_chat_app/data/temp_chats.dart';
+
 import 'package:convo_connect_chat_app/helpers/screen_size.dart';
-import 'package:convo_connect_chat_app/models/chat.dart';
-import 'package:convo_connect_chat_app/providers/auth_form_provider.dart';
-import 'package:convo_connect_chat_app/providers/auth_provider.dart';
-import 'package:convo_connect_chat_app/providers/chat_provider.dart';
+
+import 'package:convo_connect_chat_app/providers/chat_provider_logic.dart';
 import 'package:convo_connect_chat_app/screens/developer_info.dart';
 import 'package:convo_connect_chat_app/screens/profile_page.dart';
 import 'package:convo_connect_chat_app/screens/report_page.dart';
 import 'package:convo_connect_chat_app/screens/settings_page.dart';
 import 'package:convo_connect_chat_app/widgets/custom_sized_box.dart';
 import 'package:convo_connect_chat_app/widgets/logout_confirm_dialog.dart';
-import 'package:convo_connect_chat_app/widgets/report_dialog.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:lucide_icons/lucide_icons.dart';
-import 'package:provider/provider.dart';
 
 class AppDrawer extends StatelessWidget {
   //List<ChatData> chats = TempChats().Chats;
