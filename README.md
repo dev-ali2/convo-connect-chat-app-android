@@ -1,4 +1,4 @@
-# convo_connect_chat_app
+# Convo Connect
 
 A new Flutter project.
 
