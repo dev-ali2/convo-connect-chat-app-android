@@ -18,20 +18,20 @@ Convo Connect is an innovative solution that addresses the longstanding challeng
 The lack of a reliable and efficient language translation solution in messaging apps hinders effective communication among individuals who speak different languages.
 
 # Tech Used
-Convo Connect leverages state-of-the-art technologies to deliver a seamless user experience:
-Flutter for cross-platform development
-Firebase for robust backend infrastructure
-Firestore for efficient data management
-One Signal for push notifications
-Figma for intuitive design.
+- Convo Connect leverages state-of-the-art technologies to deliver a seamless user experience:
+- Flutter for cross-platform development
+- Firebase for robust backend infrastructure
+- Firestore for efficient data management
+- One Signal for push notifications
+- Figma for intuitive design.
 
 # Key Features
-Real-time Message Translation: Communicate in your native language and let Convo Connect translate your messages instantly
-High-Quality Image Sharing: Share crystal-clear images with friends and family worldwide
-Bug Reporting: Facilitate app improvement with our in-app bug reporting feature
-Personalized Color Themes: Customize your chat experience with a range of vibrant colors
-Multi-Language Support: Choose from over 100 languages to receive translated messages
-Real-time Notifications: Stay updated with instant notifications, powered by One Signal
+- Real-time Message Translation: Communicate in your native language and let Convo Connect translate your messages instantly
+- High-Quality Image Sharing: Share crystal-clear images with friends and family worldwide
+- Bug Reporting: Facilitate app improvement with our in-app bug reporting feature
+- Personalized Color Themes: Customize your chat experience with a range of vibrant colors
+- Multi-Language Support: Choose from over 100 languages to receive translated messages
+- Real-time Notifications: Stay updated with instant notifications, powered by One Signal
 
 # How to setup and run
 - Fork the repo
