@@ -15,7 +15,7 @@ Convo Connect is a cutting-edge messaging application designed to facilitate sea
 Convo Connect is an innovative solution that addresses the longstanding challenge of language barriers in real-time messaging. By providing instantaneous translation capabilities, the app enables users to communicate effectively with individuals who speak different languages, thereby fostering global understanding and connection.
 
 # Problem Statement
-The lack of a reliable and efficient language translation solution in messaging apps hinders effective communication among individuals who speak different languages, leading to misunderstandings, miscommunications, and social isolation.
+The lack of a reliable and efficient language translation solution in messaging apps hinders effective communication among individuals who speak different languages.
 
 # Tech Used
 Convo Connect leverages state-of-the-art technologies to deliver a seamless user experience:
