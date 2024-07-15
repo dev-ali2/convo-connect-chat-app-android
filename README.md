@@ -48,9 +48,6 @@ The lack of a reliable and efficient language translation solution in messaging 
 
 <img src = "https://github.com/user-attachments/assets/b3e16747-a933-44f5-b0b5-9be8a4a229e1" height = 500px > <br>
 
-<img src = "https://github.com/user-attachments/assets/ce85129d-f89e-4a13-8417-6d20cd59d464" height = 500px > <br>
-
-
 # How to setup and run
 - Fork the repo
 - Open your editor
