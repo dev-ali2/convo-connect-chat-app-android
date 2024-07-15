@@ -34,31 +34,30 @@ The lack of a reliable and efficient language translation solution in messaging 
 - Real-time Notifications: Stay updated with instant notifications, powered by One Signal
 
 # ScreenShots
-![Uploading Screenshot_20240624_174836.jpg…]()
+<img src = "https://github.com/user-attachments/assets/7f1e085c-50c1-4c77-b94c-f54892931727" height = 500px > <br>
 
-![Screenshot_20240624_174857](https://github.com/user-attachments/assets/7f1e085c-50c1-4c77-b94c-f54892931727)
+<img src = "https://github.com/user-attachments/assets/c24675bf-9135-47c4-8fbc-821cfa7b9158" height = 500px > <br>
 
-![Screenshot_20240624_174947](https://github.com/user-attachments/assets/c24675bf-9135-47c4-8fbc-821cfa7b9158)
+<img src = "https://github.com/user-attachments/assets/30c48f4a-685a-4789-bcc5-247314d19447" height = 500px > <br>
 
-![Screenshot_20240624_175145](https://github.com/user-attachments/assets/30c48f4a-685a-4789-bcc5-247314d19447)
+<img src = "https://github.com/user-attachments/assets/6fb18708-09d1-40c4-a688-f189650dba83" height = 500px > <br>
 
-![Screenshot_20240624_175112](https://github.com/user-attachments/assets/6fb18708-09d1-40c4-a688-f189650dba83)
+<img src = "https://github.com/user-attachments/assets/b3b7a79a-162b-47ef-a20d-4fc97ac183ee" height = 500px > <br>
 
-![Screenshot_20240624_174718](https://github.com/user-attachments/assets/b3b7a79a-162b-47ef-a20d-4fc97ac183ee)
+<img src = "https://github.com/user-attachments/assets/c06fcd35-5140-4316-bd9d-80ed85f1df2a" height = 500px > <br>
 
-![Screenshot_20240624_174746](https://github.com/user-attachments/assets/c06fcd35-5140-4316-bd9d-80ed85f1df2a)
+<img src = "https://github.com/user-attachments/assets/b3e16747-a933-44f5-b0b5-9be8a4a229e1" height = 500px > <br>
 
-![Screenshot_20240624_175228](https://github.com/user-attachments/assets/b3e16747-a933-44f5-b0b5-9be8a4a229e1)
+<img src = "https://github.com/user-attachments/assets/ce85129d-f89e-4a13-8417-6d20cd59d464" height = 500px > <br>
 
-![Screenshot_20240624_174947](https://github.com/user-attachments/assets/ce85129d-f89e-4a13-8417-6d20cd59d464)
 
 # How to setup and run
 - Fork the repo
 - Open your editor
 - Go to your desired directory
 - Initiate a pull request
-
 - Run pub get to download dependencies
 - Setup your project in firebase
 - Integrate your own keys in message_logic.dart file
-# And You are good to go 🤩
+
+# A star would be greatly appreciated if you have found this repository helpful. 🤩
