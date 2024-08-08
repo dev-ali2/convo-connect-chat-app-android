@@ -188,195 +188,6 @@ class ChatProv with ChangeNotifier {
     }
   }
 
-  // Future<void> sendNotification(String userId, String title, String body,
-  //     Map<String, dynamic> payload) async {
-  //   log('running sendingNotification');
-  //   // final String temp = 'www.googleapis.com/auth/firebase.messaging';
-  //   // final client = await clientViaServiceAccount(
-  //   //     ServiceAccountCredentials.fromJson({
-  //   //       "type": "service_account",
-  //   //       "project_id": "portfolio-de444",
-  //   //       "private_key_id": "79e4e1d6498ea775b282dd848d952ce1f0e7faad",
-  //   //       "private_key":
-  //   //           "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1/NVaPINu8XQl\nuRTuNb2VBU1UeNDjFqGug1jN18+p8KLS1ViLGVbPrg22WHew2VgI2EPina+r88gc\nK6W62nBA2P8fJGva7lZGEvY1/jKFhJ+bJUP3X0OPtwYl9Sr3OopAtuEJuXV4eTCw\n2EobxILo1ptEgeMM9kFjmcjDLVGdV9dKOyKxEhF7RbiWDa4oUtRR8zMwUj1e/uHM\nN9f8IjEEF6SoVDN8+7rrfIDhBnDbNasXQddLuLS9RJ3NymNQ1iooee5PoTrsaBd4\nTOcajqAJ2o/fH1L5I+3+bDQeuE/E1oF73qEiM2Jd4UuJ3gv93+4QEEiWHaMoD263\nQ8xmOFiNAgMBAAECggEACXxcQo/U6ft76ltzU9dJQnM8TKLfgHa1hrsh7djJ4jnA\nwuyL6PQxKjIQVOjXlEg/5nYfU7iUZ4oVbCJ6SPsJzteAtMbZOFgj9xMV8kqFp5/6\nEcQnfsVgaCVKFMBqtOhAPI9Lu44HKXhnqVAczMW5bRmCjleW1h4f2mkxpbq+/kx3\nRe0pnVyS9eu2zSJ8LDN6A31CiQFWP9RuSVI5w886UpIZFvu26XIrZIC4t/pe+BHv\n/buqUYBj2oow+ZBh1PAjNdQT1O+bSgA+WaA6S2D2HeB1HF/g4JAIFnXipiylZuw8\nlql8AR7iTfRqZ8DZRUft7l1jHaYy9oZ8zlWBv80kAQKBgQDnckJIrbvskNcAqTyK\ns0WjmlEnuMku6VPkGhmN0ajS6NReNyDz1QVYjK5dkKE5NX7AhRw1Bke0hvoCczuk\nEVrmgjee8Nyn6JBQKFOHrOA2sM42hJAJMu4QOYI6xyK9Gk2nyQaLd6cuWmy5XHgk\n56z/29Ae8ZT5SMwazHZ3TCt0IQKBgQDJS1lpHKcOi85KJa0Rkdr2o+cjlAXQntWy\n7DwI9tcI1pW8eAjW82whHvJRbPD8tdV84ZxWV9LsNT0nXNqiEl55wn2KDF/WCsXE\nLLVU91RepLIyBabgOUCb7wh3if9sB1bTfG5eA6lS05a3oqmSsWNAd7/Af0Or6ouf\nGMrtlaMW7QKBgQDY4sOmo9fk2d4A6panS1PI+kVuucUdxt0sdiDYO06/RhwspfCl\nTkwSLNMBLxVGLRE4jARg1B/B1nLWdPHAz9qlBAXnVcMRPehulTuheqkp1wmHITZw\nyF86qQmW1yGAn/OBdepCK8BouagFE9gqjUgbA/vF45E9AbDytAOXy7M0wQKBgQDD\nJTBODcALAxB/o5zwLpW3jFh1jnhAsut7pTfifOMlJ1tMtpXjRWQri+Phepr6c5G/\nmr1Em6nY4xghRAyVGPfMVPf90FdMm2706170Oz7o7gPvKLmKIRb41ThBI2CjK05K\ngxRAQo5xxL0V1DVPCHevNSiJhxdk4GJxX8jDodDVVQKBgF5+v4YVCa7/LHhU4jfk\nMhynkHV/ZIxkpaYcQtfedq8464sz4GMZ7I5nwqJwFFRxj6mye2tZ8IB+WVvghKia\nQYLNPJ6/3rhGtPOi8iRySzKZhJQcgTdOKrDWxnmQSD9cGbsNJ0SYCt18CLAU4dqt\npoFC4we5Dm/fJz0vqDxT1+Vb\n-----END PRIVATE KEY-----\n",
-  //   //       "client_email":
-  //   //           "firebase-adminsdk-poc55@portfolio-de444.iam.gserviceaccount.com",
-  //   //       "client_id": "118319101290817008856",
-  //   //       "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  //   //       "token_uri": "https://oauth2.googleapis.com/token",
-  //   //       "auth_provider_x509_cert_url":
-  //   //           "https://www.googleapis.com/oauth2/v1/certs",
-  //   //       "client_x509_cert_url":
-  //   //           "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-poc55%40portfolio-de444.iam.gserviceaccount.com",
-  //   //       "universe_domain": "googleapis.com"
-  //   //     }),
-  //   //     [temp]);
-
-  //   // final newToken = client.credentials.accessToken.data;
-  //   var getDoc = await db!
-  //       .collection('registeredUsers')
-  //       .where('userId', isEqualTo: userId)
-  //       .get();
-  //   String gotNotificationId = getDoc.docs.first.data()['notificationId'];
-  //   if (gotNotificationId != '' && gotNotificationId != null) {
-  //     final url =
-  //         'https://fcm.googleapis.com/v1/projects/portfolio-de444/messages:send';
-  //     final serverToken = 'Bearer 79e4e1d6498ea775b282dd848d952ce1f0e7faad';
-  //     final headers = {
-  //       'Content-Type': 'application/json',
-  //       'Authorization': 'Bearer $serverToken',
-  //     };
-  //     final jsonBody = json.encode({
-  //       'message': {
-  //         'token': gotNotificationId,
-  //         'notification': {'title': title, 'body': body},
-  //         'data': {
-  //           'userName': myData['myName'],
-  //           'userEmail': myData['myEmail'],
-  //           'userId': myData['myId'],
-  //           'userImageUrl': myData['myImageUrl'],
-  //           'prefLang': myData['prefLang'],
-  //         }
-  //       }
-  //     });
-  //     final response =
-  //         await http.post(Uri.parse(url), headers: headers, body: jsonBody);
-  //     log(response.body);
-  //   }
-  // }
-
-  // Future<void> openFromBackground() async {
-  //   FirebaseMessaging.onMessageOpenedApp.listen((message) {
-  //     navigatorKey.currentState!
-  //         .pushNamed(UserChatScreen.routeName, arguments: {
-  //       'userName': message.data['userName'],
-  //       'userEmail': message.data['userEmail'],
-  //       'userId': message.data['userId'],
-  //       'userImageUrl': message.data['userImageUrl'],
-  //       'prefLang': message.data['prefLang']
-  //     });
-  //   });
-  // }
-
-  // Future<void> openAppFromTerminatedState() async {
-  //   await AuthProv().initFirebase();
-
-  //   var initialMessage = await messaging.getInitialMessage();
-
-  //   // if (initialMessage != null) {
-  //   //   navigatorKey.currentState!
-  //   //       .pushNamed(UserChatScreen.routeName, arguments: {
-  //   //     'userName': initialMessage.data['userName'],
-  //   //     'userEmail': initialMessage.data['userEmail'],
-  //   //     'userId': initialMessage.data['userId'],
-  //   //     'userImageUrl': initialMessage.data['userImageUrl'],
-  //   //     'prefLang': initialMessage.data['prefLang']
-  //   //   });
-  //   // }
-  // }
-
-  // Future<void> showNotification(RemoteMessage message) async {
-  //   AndroidNotificationChannel channel = AndroidNotificationChannel(
-  //       '521520', 'Testing',
-  //       importance: Importance.max, enableVibration: true, playSound: true);
-  //   AndroidNotificationDetails androidNotificationDetails =
-  //       AndroidNotificationDetails(channel.id, channel.name,
-  //           enableVibration: true,
-  //           icon: '@mipmap/trans_app_icon',
-  //           importance: Importance.high,
-  //           priority: Priority.high,
-  //           ticker: 'ticker');
-  //   NotificationDetails notificationDetails =
-  //       NotificationDetails(android: androidNotificationDetails);
-
-  //   Future.delayed(Duration.zero).then((value) => localNotifications.show(
-  //       1,
-  //       message.notification!.title.toString(),
-  //       message.notification!.body.toString(),
-  //       notificationDetails));
-  // }
-
-  // void localNotificationsInit(
-  //     BuildContext context, RemoteMessage message) async {
-  //   var andoidInitializationSettings =
-  //       AndroidInitializationSettings('@mipmap/trans_app_icon');
-  //   var initializationSettings =
-  //       InitializationSettings(android: andoidInitializationSettings);
-  //   await localNotifications.initialize(initializationSettings,
-  //       onDidReceiveNotificationResponse: (payload) {
-  //     log('cam to pop');
-
-  //     navigatorKey.currentState!
-  //         .pushNamed(UserChatScreen.routeName, arguments: {
-  //       'userName': message.data['userName'],
-  //       'userEmail': message.data['userEmail'],
-  //       'userId': message.data['userId'],
-  //       'userImageUrl': message.data['userImageUrl'],
-  //       'prefLang': message.data['prefLang']
-  //     });
-  //   });
-  // }
-
-  // void firebaseMessagingInit(BuildContext context) {
-  //   FirebaseMessaging.onMessage.listen((message) {
-  //     log('here in firebaseMessingint');
-  //     log(message.notification!.title ?? '');
-  //     log(message.notification!.body ?? '');
-  //     localNotificationsInit(context, message);
-  //     showNotification(message);
-  //   });
-  // }
-
-  // Future<void> listenToTokenChanges() async {
-  //   FirebaseMessaging.instance.onTokenRefresh.listen((event) async {
-  //     log('running listenToTokenChanges');
-  //     await setMyDetails();
-  //     db = await FirebaseFirestore.instance;
-  //     db!
-  //         .collection('registeredUsers')
-  //         .where('userId', isEqualTo: myData['myId'])
-  //         .get()
-  //         .then((value) => value.docs.forEach((element) {
-  //               element.reference.update({'notificationId': event});
-  //             }));
-  //   });
-  // }
-
-  // Future<String> initNotificationRequest() async {
-  //   log('running initNotificationRequest');
-  //   final notificationSettings = await FirebaseMessaging.instance
-  //       .requestPermission(
-  //           provisional: false,
-  //           alert: true,
-  //           announcement: true,
-  //           badge: true,
-  //           sound: true,
-  //           criticalAlert: true);
-  //   if (notificationSettings.authorizationStatus ==
-  //       AuthorizationStatus.denied) {
-  //     AppSettings.openAppSettings(type: AppSettingsType.notification);
-  //     log('denied');
-  //     return 'denied';
-  //   }
-  //   if (notificationSettings.authorizationStatus ==
-  //       AuthorizationStatus.authorized) {
-  //     final token = await FirebaseMessaging.instance.getToken();
-  //     await setMyDetails();
-  //     db = await FirebaseFirestore.instance;
-  //     await db!
-  //         .collection('registeredUsers')
-  //         .where('userId', isEqualTo: myData['myId'])
-  //         .get()
-  //         .then((value) => value.docs.forEach((element) {
-  //               element.reference.update({'notificationId': token ?? ''});
-  //             }));
-  //     log(('token is here ${token}'));
-  //     log('granted');
-  //     return 'Not selected';
-  //   }
-  //   return 'error';
-  // }
-
   Future<String> getMyProfilePic() async {
     log('running getMyProfilePic');
     await setMyDetails();
@@ -778,8 +589,6 @@ class ChatProv with ChangeNotifier {
       fromThisLang = 'en';
     }
 
-    log('Goooooootttt details for translate ${message}, ${fromThisLang}, ${toLang}');
-
     final response = await http.post(Uri.parse(dotenv.env['TRANSLATION_URL']!),
         headers: {
           'content-type': 'application/json',
@@ -801,7 +610,6 @@ class ChatProv with ChangeNotifier {
     log('getting languages');
     log('got language to search ${language}');
 
-    var _auth = await FirebaseAuth.instance;
     db = await FirebaseFirestore.instance;
     var data = await db!.collection('languages').get();
     for (var doc in data.docs) {
@@ -862,16 +670,13 @@ class ChatProv with ChangeNotifier {
           .collection('registeredUsers')
           .where('userId', isEqualTo: _auth.currentUser!.uid)
           .get();
-      log('new debug setting details got doc data ${data.toString()}');
-      log('new debug setting details got doc length ${data.docs.length}');
-      log('new debug setting details got doc extracted data ${data.docs.first.data()}');
+
       myData = {
         'myId': data.docs.first.data()['userId'],
         'myEmail': data.docs.first.data()['userEmail'],
         'myName': data.docs.first.data()['userName'],
         'myImageUrl': data.docs.first.data()['userImageUrl'],
         'prefLang': data.docs.first.data()['prefLang'],
-        // 'notificationId': data.docs.first.data()['notificationId'],
         'oneSignalSubId': data.docs.first.data()['oneSignalSubId'],
         'oneSignalUserId': data.docs.first.data()['oneSignalUserId'],
       };
